@@ -1,0 +1,51 @@
+Section types:
+    .comment (white text that are not run by the processor)
+    .text (list of instructions for the processor, esentially the program)
+    .data (data that the program uses, larger variables)
+Registers:
+    x0-x31 (32 registers)
+    x0 is always 0                        # x0 is hardwired to 0
+    x1-x31 are general purpose            # you can use any for any
+    x1-x7 are used for arguments
+    x10-x11 are used for return values
+    x12-x17 are used for temporaries
+    x18-x27 are used for saved values
+    x28-x31 are used for temporaries
+Instructions:
+    la (load address)
+        la x1, numbers # load the address of the numbers array into the x1 register
+    li (load immediate)
+        li x2, 4 # load the immediate value 4 into the x2 register
+        immediate just means hard coded number, instead of a variable
+    lb (load byte)
+        lb x3, 11, 0(x1) # load the byte form MEMORY!!! at the address x1 into the x3 register
+        0(x1) syntax is used to access value stored at address x1
+        4(x1) would access the value stored at address x1 + 4, it just adds an offset
+    mv (move)
+        mv x3, x4 # copy the value in x4 to x3
+
+
+    addi (add immediate)
+        addi x2, x1, 1 # add immediate (hardcoded 1) value to x1, and store it in x2
+    add (add)
+        add two REGISTER values together, and saves in another register
+        add x1, x2, x3 # add x2 and x3, store in x1
+
+
+    blt (branch less than)
+        blt x4, x3, next # if x4 is less than x3, jump to the label 'next', else continue
+    bgtz (branch greater than zero)
+        bgtz x4, next       # csame as blt, but for greater than zero
+    beq (branch equal)
+        beq x4, x3, next  # same as blt, but for equal
+    j (jump)
+        j next # jump to the label 'next'
+
+
+    ecall
+        executes the system call in a0
+        if a0 is 10, the program will exit
+        if a0 is the program will kill itself (end task)
+
+Labels:
+    inside the code, everywhere you can put a label. Later you can jump to that label if you want
