@@ -27,18 +27,12 @@ void main(){
 
 
 
-
-
-
-
-
-
- //   printf("The charater %c", c);
-   //     if (isVowel(c)){
-     //       printf(" is ");
-      //  }
-   // else {printf("is not");}
-   // printf(" a vowel\n");
+//    printf("The charater %c", c);
+//        if (isVowel(c)){
+//            printf(" is ");
+//        }
+//    else {printf("is not");}
+//    printf(" a vowel\n");
 
 }
 

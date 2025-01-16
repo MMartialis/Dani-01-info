@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>    //needed for printf and scanf fucntion
 
 void main(){
     int cic[4];
@@ -17,4 +17,6 @@ void main(){
     kuty[7]= '\0';
     printf("The word is:%s", kuty);
 
+    char kuty2[] = "kutyus";
+    //kuty = kuty2
 }

@@ -1,8 +1,8 @@
 .text
-    la x1, numbers      #address of bytes array
-    li x2, 4            #number of bytes - 1
+    la x1, numbers      #address of bytes array (memory address)
+    li x2, 4            #number of bytes - 1 (n bytes -1)( for loop hardcoded to run 4 times)
     lb x3, 0(x1)        #first number 
-    addi x1, x1, 1      #to next number
+    addi x1, x1, 1      #to next number (sliding the pointer)
 loop:
     lb x4, 0(x1)        #load current byte
     blt x4, x3, next    #less than current max? cont

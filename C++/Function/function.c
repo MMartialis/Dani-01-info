@@ -5,5 +5,5 @@ float addnumb(float a, float b){
 }
 
 void main(){
-    printf("The addded number is: %f\n %d", addnumb(1.1, 2.2), 2);
+    printf("The addded number is: %f\n", addnumb(1.1, 2.2));
     }

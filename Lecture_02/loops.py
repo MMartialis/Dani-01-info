@@ -1,14 +1,14 @@
-#i = 10
+i = 10
 
-#while i > 0:
-#      i = i-1
+while i > 0:
+      i = i-1
 
 
-#while True:
- #     if i > 0 :
- #       i= i-1
- #     else:
- #          break
+while True:
+      if i > 0 :
+        i= i-1
+      else:
+           break
       
 
 i = 0
