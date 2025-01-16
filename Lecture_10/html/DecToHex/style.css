@@ -1,0 +1,13 @@
+body {  /* tag type or name */
+    background-color: rgb(161, 245, 217);
+}
+div.centered{     /* writing . gives the class */
+    max-width: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input#dec{   /* # deifne elemnts whit wath id should this format belong to */
+    margin-top: auto;
+}
